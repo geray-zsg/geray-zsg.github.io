@@ -1,6 +1,7 @@
-[leopard](https://leopardpan.cn) 是一个简洁的博客模板，响应式主题， 适配了电脑、手机各种屏幕，看效果直接点击下面链接   
+### 介绍
+这一个简易的个人博客，源自于[潘柏信](https://github.com/leopardpan/leopardpan.github.io)的模板 
 
-如果你喜欢请 Star ，你的 Star 是我持续更新的动力, 谢谢 😄.
+如果你喜欢请 Star ，你的 Star 是我持续更新的动力,也可以去 start [潘柏信](https://github.com/leopardpan/leopardpan.github.io)的博客， 谢谢 😄.
 
 ### 你在搭建个人博客遇到任何问题都可以找我
 
