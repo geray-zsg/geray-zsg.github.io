@@ -1,11 +1,11 @@
 # Basic
 title: Geray
 subtitle: 个人博客
-description: 欢迎来到我的个人博客~
+description: The past is just a story we tell ourselves.
 # 头像里面的标题
 avatarTitle: Geray
 # 头像里面的描述
-avatarDesc: 云原生
+avatarDesc: 一切为了搞笑
 url: "https://geray-zsg.github.io"
 
 # 博客是否自动生成目录，false为不生成
@@ -21,6 +21,7 @@ comment:
 social:
     # weibo: <微博账号>
     github: geray-zsg
+    csdn: Entity_G
     # zhihu: <知乎账号>
     # juejin: xxx
     # jianshu: <简书账号>
