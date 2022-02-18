@@ -34,7 +34,7 @@ title: 技术支持
 <h3> 如何联系到我 </h3>
 
 <p> 
-email：geray.zhu@gmail.com  
+email：geray.zhu@gmail.com  <br />
        1690014753@qq.com  
 </p> 
 <p>
