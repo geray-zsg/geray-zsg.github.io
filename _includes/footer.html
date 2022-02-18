@@ -75,13 +75,23 @@
           <!-- CSDN -->
           {% if site.social.csdn %}
           <li class="navigation__item_social">
-            <a href="https://blog.csdn.net/u/{{site.social.csdn}}" title="@{{site.social.csdn}}" target="_blank">
+            <a href="https://blog.csdn.net/{{site.social.csdn}}" title="@{{site.social.csdn}}" target="_blank">
               <div class="footer-social-icon" style="background:url(/images/csdn.png);"></div>
             </a>
           </li>
 
           {% endif %}
           
+          <!-- GITEE -->
+          {% if site.social.csdn %}
+          <li class="navigation__item_social">
+            <a href="https://gitee.com/{{site.social.gitee}}" title="@{{site.social.gitee}}" target="_blank">
+              <div class="footer-social-icon" style="background:url(/images/gitee.png);"></div>
+            </a>
+          </li>
+
+          {% endif %}
+              
           <!-- RSS -->
           <li class="navigation__item_social">
             <a href="/feed.xml" rel="author" title="RSS" target="_blank">
