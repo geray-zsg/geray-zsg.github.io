@@ -26,13 +26,10 @@ title: 技术支持
 
 <h3> 感谢您的打赏 </h3> 
 
-你会打赏吗，肯定不会滴啦，不开通了!
-![01F4E4D2.gif](https://cdn.nlark.com/yuque/0/2021/gif/8425422/1638178510860-5c5caa14-6e1c-4ccf-b613-f326be34a452.gif)
-
-
-![](/images/payimg/alipayimg.jpg)
-
-![](/images/payimg/weipayimg.jpg)
+你会打赏吗，肯定不会滴啦，不开通了!😄
+<!-- 支付二维码 -->
+<!-- ![WeChat](/images/payimg/WeChat.png) -->
+<!-- ![zhifubao](/images/payimg/zhifubao.png) -->
 
 <h3> 如何联系到我 </h3>
 
