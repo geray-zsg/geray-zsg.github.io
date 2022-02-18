@@ -32,14 +32,9 @@ title: 技术支持
 <!-- ![zhifubao](/images/payimg/zhifubao.png) -->
 
 <h3> 如何联系到我 </h3>
-
-<p> 
-email：geray.zhu@gmail.com  <br />
+email：geray.zhu@gmail.com 
        1690014753@qq.com  
-</p> 
-<p>
 qq: 1690014753     
-</p> 
 
 
 {% include comments.html %}
