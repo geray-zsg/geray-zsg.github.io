@@ -28,11 +28,12 @@ title: 技术支持
 
 你会打赏吗，肯定不会滴啦，不开通了!😄
 <!-- 支付二维码 -->
-<!-- ![WeChat](/images/payimg/WeChat.png) -->
-<!-- ![zhifubao](/images/payimg/zhifubao.png) -->
+<!-- ![](/images/payimg/alipayimg.jpg) -->
+<!-- ![](/images/payimg/weipayimg.jpg) -->
 
 <h3> 如何联系到我 </h3>
-![qq](/images/qq.png)
+
+![](/images/qq.png)
 
 {% include comments.html %}
 
