@@ -32,7 +32,7 @@ title: 技术支持
 <!-- ![zhifubao](/images/payimg/zhifubao.png) -->
 
 <h3> 如何联系到我 </h3>
-![qq](README-images/qq.png)
+![qq](/images/qq.png)
 
 {% include comments.html %}
 
