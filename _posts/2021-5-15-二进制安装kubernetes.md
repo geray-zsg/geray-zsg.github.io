@@ -7,7 +7,7 @@ tag: kubernetes
 
 # 二进制安装kubernetes
 
-https://mp.weixin.qq.com/s/VYtyTU9_Dw9M5oHtvRfseA
+参考良哥文章：原文![戳这里](https://mp.weixin.qq.com/s/VYtyTU9_Dw9M5oHtvRfseA)
 
 ## 一、前置知识点
 
@@ -62,7 +62,7 @@ Kubeadm降低部署门槛，但屏蔽了很多细节，遇到问题很难排查�
 
 单Master架构图：
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/d5patQGz8KcjSBQ2UvMibfguiaTs0dI7rYeMIAQvNI8psIVXPs8fl33NYtvnI0H046Yibib9ZTia0gbMP7WGFF0kE0A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](/images/2021-5-15-k8s/640.webp)
 
 单Master服务器规划：
 
@@ -673,7 +673,7 @@ TLS Bootstraping：Master apiserver启用TLS认证后，Node节点kubelet和kube
 
 TLS bootstraping 工作流程：
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/d5patQGz8KcjSBQ2UvMibfguiaTs0dI7rYPewp0FpLgrU9QW5o7k6k8DdbXrc8HN3j2lL5lFJEHpab2hykXia24Ew/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](/images/2021-5-15-k8s/641.webp)
 
 创建上述配置文件中token文件：
 
@@ -1331,9 +1331,9 @@ kubectl describe secrets -n kube-system $(kubectl -n kube-system get secret | aw
 
 使用输出的token登录Dashboard。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/d5patQGz8KcjSBQ2UvMibfguiaTs0dI7rYsjMx3h1jMACCtrIw6OgeYeQ7FOJ9kt3QOTMYVPKdYiarDcsURsznqrQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](/images/2021-5-15-k8s/642.webp)
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/d5patQGz8KcjSBQ2UvMibfguiaTs0dI7rYZ7H35FZqMGXNRllWHfB7MesM797hjXWXjZmqurJ1sWzR6uc4A3nW1Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](/images/2021-5-15-k8s/643webp.webp)
 
 ### 6.2 部署CoreDNS
 
