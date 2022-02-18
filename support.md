@@ -24,11 +24,10 @@ title: 技术支持
 爱好挺多，其他....暂时木有了
 
 
-
-
 <h3> 感谢您的打赏 </h3> 
 
-还没开通，以后再看
+你会打赏吗，肯定不会滴啦，不开通了![image](https://user-images.githubusercontent.com/57170601/154629687-592a02d6-86f5-4b87-90d1-e174c58d8835.png)
+
 
 ![](/images/payimg/alipayimg.jpg)
 
