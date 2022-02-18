@@ -28,8 +28,10 @@ title: 技术支持
 
 1毛、2毛不嫌少；一块、两块不嫌多!😄
 <!-- 支付二维码 -->
+<!--
 ![](/images/payimg/alipayimg.jpg)
 ![](/images/payimg/weipayimg.jpg)
+-->
 
 <h3> 如何联系到我 </h3>
 
