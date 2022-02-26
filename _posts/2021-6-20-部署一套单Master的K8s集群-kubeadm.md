@@ -53,7 +53,7 @@ Kubeadm是一个K8s部署工具，提供kubeadm init和kubeadm join，用于快�
 # 修改如下配置
 
 BOOTPROTO="static" # 使用静态IP地址，默认为dhcp 
-IPADDR="192.168.6.31" # 设置的静态IP地址
+IPADDR="192.168.6.20" # 设置的静态IP地址
 NETMASK="255.255.255.0" # 子网掩码 
 GATEWAY="192.168.6.1" # 网关地址 
 DNS1="192.168.6.2" # DNS服务器（此设置没有用到，所以我的里面没有添加）
