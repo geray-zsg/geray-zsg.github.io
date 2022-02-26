@@ -418,7 +418,8 @@ systemctl restart containerd
 - pause 镜像设置过阿里云镜像仓库地址
 - cgroups 驱动设置为systemd
 - 拉取Docker Hub 镜像配置加速地址设置为阿里云镜像仓库地址
-```shell
+
+```
 vi /etc/containerd/config.toml
    [plugins."io.containerd.grpc.v1.cri"]
       sandbox_image = "registry.aliyuncs.com/google_containers/pause:3.2"  
@@ -431,20 +432,24 @@ vi /etc/containerd/config.toml
           
 systemctl restart containerd
 ```
+
 ### 8.4 配置kubelet使用Containerd
-```shell
+
+```
 vi /etc/sysconfig/kubelet 
 KUBELET_EXTRA_ARGS=--container-runtime=remote --container-runtime-endpoint=unix:///run/containerd/containerd.sock --cgroup-driver=systemd
 
 systemctl restart kubelet
 ```
+
 ### 8.5 验证
-```shell
+```
 kubectl get node -o wide
 
 k8s-node1  xxx  containerd://1.4.4
 ```
 ### 8.6 容器管理工具
+
 Containerd提供了`ctrl`命令行工具管理容器，但功能比较简单，所以一般会用`crictl`工具验查和调试容器。
 项目地址：[https://github.com/kubernetes-sigs/cri-tools/](https://github.com/kubernetes-sigs/cri-tools/)
 设置crictl连接containerd：
