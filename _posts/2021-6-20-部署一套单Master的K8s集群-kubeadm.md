@@ -226,11 +226,14 @@ kubeadm token create --print-join-command
 
 
 ## 5、部署网络插件（CNI）
+
 Calico是一个纯三层的数据中心网络方案，是目前Kubernetes主流的网络方案。
 下载Calico的YUM文件：
-```shell
+
+```
 wget https://docs.projectcalico.org/manifests/calico.yaml
 ```
+
 下载完成后还需要修改里面定义内容：
 
 - pod网络（CALICO_IPV4POOL_CIDR），与前面`kubeadm init`中`--pod-network-cidr`指定一样
@@ -239,7 +242,8 @@ calico网络，默认是ipip模式（在每台node主机创建一个tunl0网口�
 
 修改成BGP模式，它会以daemonset方式安装在所有node主机，每台主机启动一个bird(BGPclient)，它会将calico网络内的所有node分配的ip段告知集群内的主机，并通过本机的网卡eth0或者ens33转发数据
 
-- **注：下面这里我们暂时只修改最后一步，pod网络（**CALICO_IPV4POOL_CIDR**）**
+- 注：下面这里我们暂时只修改最后一步，pod网络（CALICO_IPV4POOL_CIDR）
+
 ```shell
 # 关闭ipip模式
 - name: CALICO_IPV4POOL_IPIP
@@ -263,6 +267,7 @@ kubectl get pods -n kube-system
 
 # Calico Pod都为RUNNING之后，所有节点也会进入ready状态
 ```
+
 ### 问题处理
 #### 5.1 CoreDNS问题处理：
 ```shell
@@ -332,12 +337,13 @@ kubectl get pod,svc
  	访问地址：http://NodeIP:Port
 ## 7、部署Dashboard
 Dashboard是官方提供的一个UI，可用于基本管理K8s资源。
+
 ```shell
 wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml
 ```
 
-
 默认Dashboard只能集群内部访问，修改Service为NodePort类型，暴露到外部：
+
 ```shell
 vi recommended.yaml
 ...
@@ -361,8 +367,10 @@ spec:
 kubectl apply -f recommended.yaml
 kubectl get pods -n kubernetes-dashboard
 ```
-	访问地址：[https://NodeIP:30001](https://NodeIP:30001)
+
+访问地址：[https://NodeIP:30001](https://NodeIP:30001)
 创建service account 并绑定到默认的cluster-admin管理员集群角色：
+
 ```shell
 # 创建用户
 $ kubectl create serviceaccount dashboard-admin -n kube-system
