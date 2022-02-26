@@ -52,29 +52,27 @@ Kubeadm是一个K8s部署工具，提供kubeadm init和kubeadm join，用于快�
 # 配置文件/etc/sysconfig/network-scripts/ifcfg-<网卡名>
 # 修改如下配置
 
-BOOTPROTO="static" # 使用静态IP地址，默认为dhcp 
-IPADDR="192.168.6.20" # 设置的静态IP地址
-NETMASK="255.255.255.0" # 子网掩码 
-GATEWAY="192.168.6.1" # 网关地址 
-DNS1="192.168.6.2" # DNS服务器（此设置没有用到，所以我的里面没有添加）
+BOOTPROTO=static # 使用静态IP地址，默认为dhcp 
+IPADDR=192.168.6.20 # 设置的静态IP地址
+NETMASK=255.255.255.0 # 子网掩码 
+GATEWAY=192.168.6.2 # 网关地址 
+DNS1=8.8.8.8 # DNS服务器（此设置没有用到，所以我的里面没有添加）
+DNS2=114.114.114.114
 
 ONBOOT=yes  #设置网卡启动方式为 开机启动 并且可以通过系统服务管理器 systemctl 控制网卡
 
 ```
 
-修改/etc/sysconfig/network
-
-```
-# Created by anaconda
-NETWORKING=yes
-GATEWAY=192.168.6.1
-```
-
 重启网络服务
 
 ```
+systemctl restart network
+# 或者
 service network restart
+
+# 测试
  ip a
+ping baidu.com
 ```
 
 
