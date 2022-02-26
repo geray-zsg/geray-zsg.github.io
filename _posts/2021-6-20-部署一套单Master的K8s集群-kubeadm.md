@@ -75,6 +75,8 @@ service network restart
 ping baidu.com
 ```
 
+配置国内YUM源（阿里巴巴）
+进入网站 [阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/) 点击`centos`，根据步骤操作即可（提前安装好wget）
 
 
 系统初始化
