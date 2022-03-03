@@ -43,7 +43,7 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\
 
 1. 选择路径
 
-![image-20220302184129452](/images\posts\2022-3-2-IDEA与Maven（安装、配置、项目构建）\image-20220302184129452.png)
+![image-20220302184129452](/images/posts/2022-3-2-IDEA与Maven（安装、配置、项目构建）/image-20220302184129452.png)
 
 2. 安装配置
 
