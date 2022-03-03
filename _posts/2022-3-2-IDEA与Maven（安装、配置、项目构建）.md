@@ -43,7 +43,7 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\
 
 
 # 2、安装IDEA
-### 安装
+### 1.安装
 
 双击安装文件`ideaIU-2020.1.exe`
 
@@ -60,7 +60,7 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\
 ![image-20220302184445376](/images/posts/2022-3-2-IDEA与Maven（安装、配置、项目构建）/image-20220302184445376.png)
 
 
-### 激活
+### 2.激活
 
 运行之后，先选择免费试用
 
