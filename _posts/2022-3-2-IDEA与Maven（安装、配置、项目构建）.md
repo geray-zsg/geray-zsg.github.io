@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "maven"
+title: "maven和IDEA工具的的安装、配置和项目构建"
 description: "分享"
 tag: maven
 ---
@@ -43,10 +43,7 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\
 
 
 # 2、安装IDEA
-
-
 ### 安装
-
 
 双击安装文件`ideaIU-2020.1.exe`
 
@@ -64,7 +61,6 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\
 
 
 ### 激活
-
 
 运行之后，先选择免费试用
 
