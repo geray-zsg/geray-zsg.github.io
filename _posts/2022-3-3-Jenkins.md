@@ -1948,7 +1948,7 @@ su sonar ./bin/linux-x86-64/sonar.sh status
 # 停止
 su sonar ./bin/linux-x86-64/sonar.sh stop 
 # 查看日志
-tail -f logs/sonar.logs 
+tail -f logs/sonar.log
 ```
 
 访问：http://192.168.6.20:9000/about
