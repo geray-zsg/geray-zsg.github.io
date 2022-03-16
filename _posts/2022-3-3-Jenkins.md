@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenkins"
+title: "Jenkins基础（一）"
 description: "分享"
 tag: Jenkins
 ---
@@ -303,6 +303,7 @@ sudo gitlab-rake "gitlab:password:reset[root]"
 ![image-20220303163047531](/images/posts/2022-3-3-Jenkins/image-20220303163047531.png)
 
 ## 4. 持续集成环境-Jenkins安装
+官方参考链接：[https://pkg.jenkins.io/redhat/](https://pkg.jenkins.io/redhat/)
 
 ```
 # 1、添加存储库
