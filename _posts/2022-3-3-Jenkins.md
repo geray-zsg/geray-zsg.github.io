@@ -313,10 +313,9 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 # 2、安装（下载路径：https://www.jenkins.io/zh/download）（war包下载位置：http://mirrors.jenkins.io/war/）
 yum install epel-release -y # 安装依赖（提供“daemonize”的存储库）
 
-# yum install java-11-openjdk-devel -y # 安装jdk
+yum install java-11-openjdk-devel -y # 安装jdk
 # yum remove java-11-openjdk-devel -y
-
-yum install java-1.8.*-openjdk-devel -y
+# yum install java-1.8.*-openjdk-devel -y
 
 yum install jenkins -y # 安装Jenkins
 
