@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Kubeadm部署一套单master的k8s集群"
+description: "分享"
+tag: Kubernetes
+---
+
 ## 1、前置知识点
 ### 1.1 生成环境下可部署k8s的两种方式
 
