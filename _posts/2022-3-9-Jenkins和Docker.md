@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenkins（二）- Jenkins、Docker和SpringCloud持续集成"
+title: "Jenkins基础（二）- Jenkins、Docker和SpringCloud持续集成"
 description: "分享"
 tag: Jenkins
 ---
