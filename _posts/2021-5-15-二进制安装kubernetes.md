@@ -2,7 +2,7 @@
 layout: post
 title: "二进制安装k8s"
 description: "分享"
-tag: kubernetes
+tag: Kubernetes
 ---
 
 # 二进制安装kubernetes
