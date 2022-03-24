@@ -1873,6 +1873,10 @@ select user,host from user;
 update user set host='%' where user='root';
 flush privileges;
 
+# 设置远程访问
+grant all privileges on *.* to 'root'@'%' identified by 'root@123';
+flush privileges;
+
 # 关闭数据库
 ./mysqladmin shutdown -uroot -p'root@123'
 ```
