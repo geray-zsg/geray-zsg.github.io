@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RabbitMQ基础（三）- 环境部署"
+title: "RabbitMQ基础（一）- 环境部署"
 description: "分享"
 tag: RabbitMQ
 ---
