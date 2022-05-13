@@ -138,6 +138,17 @@ cat > /etc/docker/daemon.json << EOF
 }
 EOF
 
+# 或者使用更多的镜像
+cat > /etc/docker/daemon.json << EOF
+{
+  "registry-mirrors": [
+    "https://hub-mirror.c.163.com",
+    "https://registry.aliyuncs.com",
+    "https://registry.docker-cn.com",
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+EOF
 systemctl restart docker
 docker info
 ```
