@@ -638,7 +638,33 @@ Jenkins国外官方插件地址下载速度非常慢，所以可以修改为国�
 
 - kubernetes地址：采用了k8s的服务器发现：https://kubernetes.default.svc.cluster.local （基本是固定的地址）
 - k8s的命名空间（namespace）：填kube-ops（Jenkins的安装的命名空间），然后点击Test Connection，如果出现 Connection test successful 的提示信息证明 Jenkins 已经可以和 Kubernetes 系统正常通信
-- Jenkins URL 地址：http://jenkins.kube-ops.svc.cluster.local:8080（基本也是固定的）
+- Jenkins URL 地址：http://jenkins.kube-ops.svc.cluster.local:8080（有时候上上边会提供，一般填写jenkins的访问地址即可： http://192.168.6.20:30005/）
+
+> 说明：
+> Kubernetes地址指的是Kubernetes API server的地址，Jenkins Master正是通过Kubernetes plugin向这个地址发起调度Pod的请求。
+> 如果需要添加证书凭据：
+> ca.crt的内容就是Kubernetes服务证书key。
+> 
+> 上图中的凭据，是使用客户端的证书和key生成的pxf文件。先将/root/.kube/config中client-certificate-data和client-key-data的内容分别转化成base64 编码的文件。
+> 
+> #echo client-certificate-data的内容 | base64 -D > ~/client.crt#echo client-key-data的内容 | base64 -D > ~/client.crt
+> 
+> 根据这两个文件制作pxf文件：
+> 
+> # openssl pkcs12 -export -out ~/cert.pfx -inkey ~/client.key -in ~/client.crt -certfile ~/ca.crt# Enter Export Password:# Verifying - Enter Export Password:
+> 
+> 自定义一个password并牢记。
+> 
+> 点击Add，选择类型是Cetificate，点击Upload certificate，选取前面生成cert.pfx文件，输入生成cert.pfx文件时的密码，就完成了凭据的添加。
+> ```
+> 另外需要挂载两个主机目录：
+> 
+> ```
+> /var/run/docker.sock：该文件是用于 Pod 中的容器能够共享宿主机的 Docker；
+> /root/.kube：这个目录挂载到容器的/root/.kube目录下面这是为了让我们能够在 Pod 的容器中能够使用 kubectl 工具来访问我们的 Kubernetes 集群，方便我们后面在 Slave Pod 部署 Kubernetes 应用；
+> ```
+
+
 
 ## 5、构建Jenkins-Slave自定义镜像（Jenkins从节点）
 
