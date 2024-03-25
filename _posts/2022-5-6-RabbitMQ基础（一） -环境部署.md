@@ -209,6 +209,11 @@ rabbitmqctl reset
 rabbitmqctl start_app
 ```
 
+## 7. 界面添加用户和vhost
+![image](https://github.com/geray-zsg/geray-zsg.github.io/assets/57170601/bbc59547-e1aa-4340-aea2-a92f994db572)
+![image](https://github.com/geray-zsg/geray-zsg.github.io/assets/57170601/83ab8397-f334-4269-a291-dac74b437010)
+
+
 
 
 # 2、集群部署
