@@ -166,6 +166,16 @@ rabbitmq-plugins enable rabbitmq_management
 >
 
 ```shell
+#添加vhost
+rabbitmqctl add_vhost /testhost
+
+
+#列出vhost
+rabbitmqctl list_vhosts
+
+#删除vhost
+rabbitmqctl delete_vhost /testhost
+
 # 创建账号和密码
 rabbitmqctl add_user admin Geray_2022
 
